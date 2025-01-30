@@ -1,7 +1,8 @@
 const core = require('@actions/core');
 
 async function run() {
-    core.info('Hello World!');
+    const person = core.getInput('person');
+    core.info('Hello World! ' + person);
 }
 
 run();
